@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch featured or popular movies from the TMDB API
-    fetch('https://api.themoviedb.org/3/movie/popular?api_key=36c2ab884dfcc4966187fec1be3fc44a&language=en-US&page=1')
+    fetch('https://api.themoviedb.org/3/movie/popular?api_key=YOUR_API_KEY&language=en-US&page=1')
       .then(response => response.json())
       .then(data => setFeaturedMovies(data.results))
       .catch(error => console.error('Error fetching featured movies:', error));
@@ -26,12 +26,12 @@ const Home = () => {
     autoplay: true,
     autoplaySpeed: 1000, 
     centerMode: true,
-    centerPadding: '3%', // Adjust for spacing
+    centerPadding: '3%',                                                   // Adjust for spacing
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          centerPadding: '10%', // Adjust for smaller screens
+          centerPadding: '10%',                                           // Adjust for smaller screens
         },
       },
     ],
@@ -53,8 +53,6 @@ const Home = () => {
           {featuredMovies.map(movie => (
             <div key={movie.id} className="featured-movie">
               <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.title} className="img-fluid" />
-              {/* <h3 className="text-center mt-3">{movie.title}</h3> */}
-              {/* <p>{movie.overview}</p> */}
             </div>
           ))}
         </Slider>
