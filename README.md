@@ -52,7 +52,7 @@ https://github.com/SURD1618/movie-browser/assets/77046452/0eb17a34-a2fe-46fd-81a
 
 ## Acknowledgments
 
-- Movie data provided by [TMDB API](https://www.themoviedb.org/documentation/api).
+- Movie data provided by [TMDB API](https://www.themoviedb.org/).
 
 ## Contact
 
