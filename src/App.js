@@ -15,11 +15,11 @@ function App() {
 
   useEffect(() => {
     if (searchText) {
-      fetch(`https://api.themoviedb.org/3/search/movie?api_key=36c2ab884dfcc4966187fec1be3fc44a&language=en-US&query=${searchText}&page=1&include_adult=false`)
+      fetch(`https://api.themoviedb.org/3/search/movie?api_key=YOUR_API_KEY&language=en-US&query=${searchText}&page=1&include_adult=false`)
         .then(response => response.json())
         .then(data => {
           if (data.results.length === 0) {
-            setSearchResults([]);                     // No movies found
+            setSearchResults([]);                                                   // No movies found
           } else {
             setSearchResults(data.results);
           }
@@ -33,8 +33,7 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/about" component={AboutView} />
-        <Route path="/search">     {/* TERTIARY OPERATOR */}
-          {/* {searchResults.length === 0 ? ( <Hero text="No movies found" /> ) : ( <SearchView keyword={searchText} searchResults={searchResults} />)} */}
+        <Route path="/search">    
           <SearchView keyword={searchText} searchResults={searchResults} />
         </Route>
         <Route path="/movies/:id" component={MovieView} />
@@ -48,5 +47,3 @@ function App() {
 export default App;
 
 
-// POSTER PATH URL
-//https://image.tmdb.org/t/p/original//dhjyfcwEoW6jJ4Q7DpZTp6E58GA.jpg 
