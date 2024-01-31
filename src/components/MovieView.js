@@ -12,13 +12,13 @@ const MovieView = () => {
 
     useEffect(() => {
         console.log("Making an api request", id)
-        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=36c2ab884dfcc4966187fec1be3fc44a&language=en-US%27`)
+        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=YOUR_API_KEY&language=en-US%27`)
             .then(response => response.json())
             .then(data => {
                 setTimeout(() => {
                     setMovieDetails(data)
                     setIsLoading(false)
-                },2000) //just for testing Loading...
+                },2000)                                         //Loading...
             })
     }, [id])
 
@@ -82,4 +82,3 @@ const MovieView = () => {
 export default MovieView;
 
 
-// BACKDROP_PATH = https://image.tmdb.org/t/p/original/rI8zOWkRQJdlAyQ6WJOSlYK6JxZ.jpg
