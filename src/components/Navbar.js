@@ -5,13 +5,11 @@ const Navbar = ({ searchText, setSearchText }) => {
   const history = useHistory();
 
   const updateSearchText = (e) => {
-    // history.push('/search')
     setSearchText(e.target.value);
   }
 
   const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    
+    e.preventDefault(); 
     // Redirect to the search results page or trigger your search logic here
     history.push(`/search?query=${encodeURIComponent(searchText)}`);
   };
@@ -31,6 +29,7 @@ const Navbar = ({ searchText, setSearchText }) => {
               <li className="nav-item">
                 <Link className="nav-link" to="/about">About</Link>
               </li>
+  
               {/* <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" to="goingsomewhere" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown 
@@ -42,6 +41,8 @@ const Navbar = ({ searchText, setSearchText }) => {
                   <li><Link className="dropdown-item" to="goingsomewhere">Something else here</Link></li>
                 </ul>
               </li> */}
+              // DROP DOWN LIST - OPTIONAL
+  
               <li className="nav-item">
                 <Link className="nav-link active" aria-disabled="true" to="/color">Coming soon</Link>
               </li>
