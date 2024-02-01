@@ -33,6 +33,7 @@ A movie browsing application that allows users to discover, search, and explore 
 - **components/MovieView.js:** Displays detailed information about a selected movie.
 - **components/Hero.js:** Hero component for header styling.
 - **components/NotFound.js:** Displays a not-found page with a sad dog image.
+- **App.css:** Styling Home page.
 
 ## Working Video
 https://github.com/SURD1618/movie-browser/assets/77046452/0eb17a34-a2fe-46fd-81a4-b8346c1d1096
