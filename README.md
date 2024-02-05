@@ -57,7 +57,7 @@ https://github.com/SURD1618/movie-browser/assets/77046452/0eb17a34-a2fe-46fd-81a
 
 ## Contact
 
-For any questions or feedback, feel free to contact the developer:
+For any questions or feedback, feel free to contact me:
 - Email: rd488411@gmail.com
 - GitHub: [SURD1618](https://github.com/SURD1618)
 
