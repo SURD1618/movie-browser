@@ -63,7 +63,7 @@ For any questions or feedback, feel free to contact me:
 
 ## Getting Started
 
-1. Clone the repository.
+1. Clone the repository: https://github.com/SURD1618/movie-browser.git
 2. Follow the installation steps.
 3. Start the app and enjoy exploring movies!
 
