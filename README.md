@@ -67,4 +67,6 @@ For any questions or feedback, feel free to contact me:
 2. Follow the installation steps.
 3. Start the app and enjoy exploring movies!
 
+## Contributing
 
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
